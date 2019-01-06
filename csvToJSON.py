@@ -1,4 +1,4 @@
-# Purpose is to convert a csv file to json
+# Purpose is to convert a csv file to a JSON file (.json)
 # it takes 'input.csv' and outputs 'output.json'
 
 import csv, os, json
@@ -26,8 +26,8 @@ for row in readObj:
 # Remove the first row   
 csvRows.pop(0)
 
+# Output to 'output.json'
 newJSONObj = open('output.json', 'w')
 jsonDump = json.dumps(csvRows)
-
 newJSONObj.write(jsonDump)
 newJSONObj.close()
