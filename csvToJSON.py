@@ -1,5 +1,6 @@
 # Purpose is to convert a csv file to a JSON file (.json)
-# it takes 'input.csv' and outputs 'output.json'
+# It takes 'input.csv' and outputs 'output.json'
+# Simple files only, haven't testing more complex files, so it may break
 
 import csv, os, json
 
